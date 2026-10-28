@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+            android:id="@+id/chitiet_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết công việc"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold">
+    </TextView>
+    <TextView
+            android:id="@+id/txttencongviec_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên công việc: "
+            android:textStyle="bold">
+    </TextView>
+    <TextView
+            android:id="@+id/txtthoihan_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời hạn: "
+            android:textStyle="bold">
+    </TextView>
+    <TextView
+            android:id="@+id/txtmota_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả: "
+            android:textStyle="bold">
+    </TextView>
+    <Button
+            android:id="@+id/btnchinhsua_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa"
+            android:backgroundTint="#1976D2">
+    </Button>
+    <Button
+            android:id="@+id/btnquaylai_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:backgroundTint="#1976D2">
+    </Button>
+
+
+</LinearLayout>

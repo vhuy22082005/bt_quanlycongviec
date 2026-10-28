@@ -1,5 +1,6 @@
 package com.example.bt_quanlycongviec
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -22,13 +23,25 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         b.btnthem108.setOnClickListener {
-            val ten = b.tencongviec108.text.toString().trim()
-            val thoihan = b.thoihan108.text.toString().trim()
-            val mota = b.mota108.text.toString().trim()
+            val ten = b.edttencongviec108.text.toString().trim()
+            val thoihan = b.edtthoihan108.text.toString().trim()
+            val mota = b.edtmota108.text.toString().trim()
 
-            if (ten.isNotEmpty())
+            if (ten.isEmpty())
                 Toast.makeText(this, "Nhập tên công việc", Toast.LENGTH_SHORT).show()
             else Toast.makeText(this, "Đã thêm công việc", Toast.LENGTH_SHORT).show()
+        }
+        b.btnxemchitiet108.setOnClickListener {
+            val ten = b.edttencongviec108.text.toString().trim()
+            val thoihan = b.edtthoihan108.text.toString().trim()
+            val mota = b.edtmota108.text.toString().trim()
+            if (ten.isEmpty())
+                Toast.makeText(this, "Nhập tên công việc", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, DetailActivity::class.java).apply {
+                            putExtra("ten ",ten )
+                            putExtra(" thoi ",thoihan )
+                            putExtra("mota ", mota )
+            })
         }
     }
 }

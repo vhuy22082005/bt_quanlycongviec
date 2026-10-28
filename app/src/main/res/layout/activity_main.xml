@@ -42,7 +42,7 @@
             android:textStyle="bold">
     </TextView>
     <EditText
-            android:id="@+id/edt_108"
+            android:id="@+id/edtthoihan_108"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nhập thời hạn công việc"
