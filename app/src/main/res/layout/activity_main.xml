@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/congviec_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý công việc"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold">
+    </TextView>
+    <TextView
+            android:id="@+id/tencongviec_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên công việc: "
+            android:textStyle="bold">
+    </TextView>
+    <EditText
+            android:id="@+id/edttencongviec_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên công việc"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:inputType="text">
+    </EditText>
+    <TextView
+            android:id="@+id/thoihan_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời hạn: "
+            android:textStyle="bold">
+    </TextView>
+    <EditText
+            android:id="@+id/edt_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập thời hạn công việc"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:inputType="text">
+    </EditText>
+    <TextView
+            android:id="@+id/mota_108"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả: "
+            android:textStyle="bold">
+    </TextView>
+    <EditText
+            android:id="@+id/edtmota_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mô tả "
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:inputType="text">
+    </EditText>
+    <Button
+            android:id="@+id/btnthem_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm công việc"
+            android:backgroundTint="#1976D2">
+    </Button>
+    <Button
+            android:id="@+id/btnxemchitiet_108"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết công việc"
+            android:backgroundTint="#1976D2">
+    </Button>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
